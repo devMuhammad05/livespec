@@ -1,0 +1,29 @@
+{
+    "name": "livespec/livespec",
+    "description": "CI/CD tool that verifies APIs are machine-readable by AI agents",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Livespec\\Livespec\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LiveSpec\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "symfony/console": "^8.0",
+        "symfony/yaml": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Muhammad"
+        }
+    ],
+    "bin": [
+        "bin/livespec"
+    ]
+}

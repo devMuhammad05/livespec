@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+// require __DIR__ . '/../vendor/autoload.php';
+
+// Bootstrap autoloader
+foreach ([__DIR__ . '/../../../autoload.php', __DIR__ . '/../vendor/autoload.php'] as $file) {
+    if (file_exists($file)) {
+        require $file;
+        break;
+    }
+}
+
+
+use Livespec\Livespec\Console\ScanCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('LiveSpec', '1.0.0');
+$application->addCommand(new ScanCommand());
+
+$application->run();

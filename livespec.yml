@@ -1,0 +1,6 @@
+api:
+  source: openapi.yaml
+agent:
+  model: gpt-4o-mini
+validation:
+  strict: true
